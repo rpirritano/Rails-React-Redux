@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const HelloWorld = ({ name, updateName }) => (
+const LandingPage = ({ name, updateName }) => (
   <div>
     <h3>
-      Hello, {name}!
+      Hello, {name}, this is my Landing Page!
     </h3>
     <hr />
     <form >
@@ -21,9 +21,9 @@ const HelloWorld = ({ name, updateName }) => (
   </div>
 );
 
-HelloWorld.propTypes = {
+LandingPage.propTypes = {
   name: PropTypes.string.isRequired,
   updateName: PropTypes.func.isRequired,
 };
 
-export default HelloWorld;
+export default LandingPage;
