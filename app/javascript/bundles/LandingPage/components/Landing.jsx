@@ -18,17 +18,32 @@ export default class Landing extends React.Component {
               <p>In vulputate diam sed magna posuere, sit amet dapibus lacus sollicitudin. </p>
               <p>Nulla rhoncus diam at mauris.</p>
             </div>
-            <div className="dashboard-button-container">
-              <a href="#">
-                <div className="dashboard-button">
-                  <p>GET STARTED</p>
+            <h1>Log in</h1>
+            <div className="row">
+              <div className="col-md-6 col-md-offset-3">
+                <div>
+                  <label>Email</label>
+                  <input type="text" className="form-control" placeholder="Enter your email"/>
                 </div>
-              </a>
+                <div>
+                  <label>Password</label>
+                  <input type="text" className="form-control" placeholder="Enter your password"/>
+                </div>
+                <div>
+                  <button type="submit" className="btn btn-primary">Log in</button>
+                </div>
+                <p>New user</p>
+                <a>Sign up Now!</a>
             </div>
           </div>
         </div>
-        <Footer logo={this.props.logo} instagram={this.props.instagram} twitter={this.props.twitter} medium={this.props.medium} />
       </div>
+        <Footer logo={this.props.logo} />
+      </div>
+
+
+
+
     )
   }
 }

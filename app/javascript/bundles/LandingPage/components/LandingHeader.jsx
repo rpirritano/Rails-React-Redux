@@ -4,20 +4,20 @@ import React from 'react';
 export default class LandingHeader extends React.Component {
   render() {
     return (
-      <header className="landing-Header">
-        <div className="header-server-logo">
-        </div>
-        <div className="header-button-container">
-          <a href="#">
-            <div className="landing-button login">
-              <p>Log in</p>
+      <header className="navbar navbar-fixed-top navbar-inverse">
+        <div className="container">
+          <nav>
+            <div className="nav navbar-nav navbar-right">
+              <a href="#">
+                <p>Log in</p>
+              </a>
+              <a href="#">
+                <div className="nav navbar-nav navbar-right">
+                  <p>Sign up</p>
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="#">
-            <div className="landing-button signup">
-              <p>Sign up</p>
-            </div>
-          </a>
+          </nav>
         </div>
       </header>
     )
